@@ -1,6 +1,6 @@
 NVCC = nvcc
 CXXFLAGS = -std=c++17 -O2
-LDFLAGS = -lcudart_static
+LDFLAGS = -L/usr/local/cuda/lib64 -lcudart_static -lcuda
 
 # Directories
 SRC_DIR = src
